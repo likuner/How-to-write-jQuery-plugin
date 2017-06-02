@@ -1,4 +1,4 @@
-<a href="https://likun.github.io/cv"> About me </a>
+<a href="https://likuner.github.io/cv"> About me </a>
 ----
 <a href="https://github.com/likuner/es6tutorial/tree/gh-pages/docs"> ECMAScript 6 </a>
 ----
