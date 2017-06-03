@@ -4,3 +4,6 @@
 ----
 <a href="https://cn.vuejs.org/v2/guide/"> Vue.js </a>
 ----
+<a href="http://weex.apache.org/cn/guide/"> Weex </a>
+----
+
