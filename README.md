@@ -6,4 +6,6 @@
 ----
 <a href="http://weex.apache.org/cn/guide/"> Weex </a>
 ----
+<a href="https://likuner.github.io/file/jquery/build"> jQuery </a>
+----
 
