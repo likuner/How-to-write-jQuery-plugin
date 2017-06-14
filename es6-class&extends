@@ -1,1 +1,10 @@
 
+calss Person {
+    constructor(name,age) {
+        this.name = name;
+        this.age = age;
+    }
+    say() {
+        console.info(`$(this.name):$(this.age)`);
+    }
+}
