@@ -5,6 +5,17 @@ calss Person {
         this.age = age;
     }
     say() {
-        console.info(`$(this.name):$(this.age)`);
+        console.info(`${this.name},${this.age}`);
     }
 }
+
+class Student extends Person {
+    constructor(name,age,school) {
+        super(name,age);
+        this.school = school;
+    }
+    getSchool() {
+        console.info(`${this.name},${this.age},${this.school}`);
+    }
+}
+
