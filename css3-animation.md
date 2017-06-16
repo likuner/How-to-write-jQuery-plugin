@@ -1,3 +1,4 @@
+```css
 @keyframes my-anim{
   0%{}  /*0% == from*/
   .
@@ -13,4 +14,4 @@ animation-timing-function: linear/ease(default)/ease-in/ease-out/ease-in-out;
 animation-iteration-count: 1(default)/num/infinite;
 animation-play-state: paused/running;
 animation-fill-mode: ?
-
+```
