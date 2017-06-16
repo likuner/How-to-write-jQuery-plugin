@@ -21,8 +21,8 @@
   var range = { minimum: 10, maximum: 20 };
 
   // Create a new version of the checkNumericRange function that uses range.
-  // var boundObjectWithRange = originalObject.checkNumericRange.bind(range);  //bind用法，多了一次执行过程
-  // var result = boundObjectWithRange(10);
+  var boundObjectWithRange = originalObject.checkNumericRange.bind(range);  //bind用法，多了一次执行过程
+  var result = boundObjectWithRange(10);
   // var result = originalObject.checkNumericRange.call(range,10);  //call用法
   // var result = originalObject.checkNumericRange.apply(range,[10]);  //apply用法
   document.write(result);
