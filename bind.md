@@ -21,14 +21,10 @@
   var range = { minimum: 10, maximum: 20 };
 
   // Create a new version of the checkNumericRange function that uses range.
-  // var boundObjectWithRange = originalObject.checkNumericRange.bind(range);
-
-  // Check whether 10 is in the numeric range.
+  // var boundObjectWithRange = originalObject.checkNumericRange.bind(range);  //bind用法，多了一次执行过程
   // var result = boundObjectWithRange(10);
-
-  var result = originalObject.checkNumericRange.bind(range)(12);  //bind用法，多了一次执行过程
-  // var result = originalObject.checkNumericRange.call(range,12);  //call用法
-  // var result = originalObject.checkNumericRange.apply(range,[12]);  //apply用法
+  // var result = originalObject.checkNumericRange.call(range,10);  //call用法
+  // var result = originalObject.checkNumericRange.apply(range,[10]);  //apply用法
   document.write(result);
   // Output: true
 </script>
