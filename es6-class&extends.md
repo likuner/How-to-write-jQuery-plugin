@@ -1,4 +1,4 @@
-
+```javascript
 calss Person {
     constructor(name,age) {
         this.name = name;
@@ -22,3 +22,4 @@ class Student extends Person {
 let stu = new Student('Peter', 18, 'No.2 high school');
 stu.say();  //Peter,18 (extends from Person)
 stu.getSchool();  //Peter,18,No.2 high school
+```
