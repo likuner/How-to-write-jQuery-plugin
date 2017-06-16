@@ -27,5 +27,5 @@
   // var result = originalObject.checkNumericRange.apply(range,[10]);  //apply用法
   document.write(result);
   // Output: true
-</script>
+  
 ```
