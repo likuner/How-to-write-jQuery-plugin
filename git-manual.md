@@ -3,6 +3,14 @@
 ```
 git init
 ```
+从远程分支克隆一个版本库
+```
+git clone https://github.com/likuner/fragment.git
+```
+克隆版本库时，远程分支自动被命名为origin，如果想自定义远程分支名
+```
+git clone -o repo https://github.com/likuner/fragment.git
+```
 查看工作区(working directory)的改动情况
 ```
 git status
