@@ -66,6 +66,35 @@ git merge dev
 ```
 将master分支的代码提交到远程分支
 ```
-git push https://github.com/likuner/fragment.git master
+git push origin
+```
+取回远程分支的更新
+```
+git fetch origin master
+```
+取回远程分支的更新，并与本地分至合并
+```
+git pull origin master
+```
+查看所有远程主机
+```
+git remote -v
+```
+添加远程主机
+```
+git remote add repo https://github.com/likuner/fragment.git
+```
+删除远程主机
+```
+git remote rm repo
+```
+重新命名远程主机
+```
+git remote rename repo newrepo
+```
+修改配置信息
+```
+git config --global user.name=peter
+git config --global user.email=111@163.com
 ```
 
