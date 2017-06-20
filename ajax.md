@@ -14,8 +14,9 @@ xhr.open("get","login.jsp?name=peter&pass=111111&ts="+Date.now(),true);  //加�
 open()方法有三个参数：请求方式get/post，请求的地址及参数，是否异步操作
 #### 3.发送请求
 ```javascript
-xhr.send();
+xhr.send();  //可以有参数，例如："name=peter&pass=111111"，但必须是post请求
 ```
+还可以在send()前设置请求头，例如：xhr.setRequestHeader('name','steve');
 #### 4.接收服务端的返回信息
 ```javascript
 xhr.onreadystatechange = function(){
