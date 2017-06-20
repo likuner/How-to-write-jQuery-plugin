@@ -66,7 +66,7 @@ git merge dev
 ```
 将master分支的代码提交到远程分支
 ```
-git push origin
+git push origin master
 ```
 取回远程分支的更新
 ```
