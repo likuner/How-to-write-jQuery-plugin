@@ -2,9 +2,9 @@
 #### 1.创建ajax对象
 ```javascript
 if(window.XMLHttpRequest){
-  var xhr = new XMLHttpRequest();
+    var xhr = new XMLHttpRequest();
 }else{
-  var xhr = new ActiveXObject("Microsoft.XMLHTTP");  //IE6
+    var xhr = new ActiveXObject("Microsoft.XMLHTTP");  //IE6
 }
 ```
 #### 2.连接服务器
@@ -19,11 +19,11 @@ xhr.send();
 #### 4.接收服务端的返回信息
 ```javascript
 xhr.onreadystatechange = function(){
-  if(xhr.readyState==4 && xhr.status==200 || xhr.status==304){
-    console.info(xhr.responseText);  //请求成功，打印返回的数据
-  }else{
-    console.error('error');  //请求失败
-  }
+    if(xhr.readyState==4 && xhr.status==200 || xhr.status==304){
+        console.info(xhr.responseText);  //请求成功，打印返回的数据
+    }else{
+        console.error('error');  //请求失败
+    }
 };
 ```
 客户端和服务端有交互时，会调用xhr.onreadystatechange，xhr.reafyState用来说明客户端和服务端交互到哪种程度了，
@@ -32,9 +32,9 @@ xhr.readyState有5个值：0表示未初始化，还没有调用open()方法；1
 ####　以上代码组合起来
 ```javascript
 if(window.XMLHttpRequest){
-  var xhr = new XMLHttpRequest();
+    var xhr = new XMLHttpRequest();
 }else{
-  var xhr = new ActiveXObject("Microsoft.XMLHTTP");  //IE6
+    var xhr = new ActiveXObject("Microsoft.XMLHTTP");  //IE6
 }
 
 xhr.open("get","http://192.168.1.1?name=peter&ts="+Date.now(),true);
@@ -42,11 +42,11 @@ xhr.open("get","http://192.168.1.1?name=peter&ts="+Date.now(),true);
 xhr.send();
 
 xhr.onreadystatechange = function(){
-  if(xhr.readyState==4 && xhr.status==200 || xhr.status==304){
-    console.info(xhr.responseText);  //请求成功，打印返回的数据
-  }else{
-    console.error('error');  //请求失败
-  }
+    if(xhr.readyState==4 && xhr.status==200 || xhr.status==304){
+        console.info(xhr.responseText);
+    }else{
+        console.error('error');
+    }
 };
 ```
 
