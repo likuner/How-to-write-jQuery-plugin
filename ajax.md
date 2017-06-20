@@ -9,7 +9,7 @@ if(window.XMLHttpRequest){
 ```
 #### 2.连接服务器
 ```javascript
-xhr.open("get","http://192.168.1.1?name=peter&ts="+Date.now(),true);  //加上时间戳Date.now()，去除缓存
+xhr.open("get","http://127.0.0.1?name=peter&ts="+Date.now(),true);  //加上时间戳Date.now()，去除缓存
 ```
 open()方法有三个参数：请求方式get/post，请求的地址及参数，是否异步操作
 #### 3.发送请求
@@ -37,7 +37,8 @@ if(window.XMLHttpRequest){
     var xhr = new ActiveXObject("Microsoft.XMLHTTP");  //IE6
 }
 
-var url = "http://192.168.1.1?name=peter&ts="+Date.now();
+var url = "http://127.0.0.1?name=peter&ts="+Date.now();
+url = encodeURI(url);  //对地址进行编码，防止有空格
 xhr.open("get",url,true);
 
 xhr.send();
