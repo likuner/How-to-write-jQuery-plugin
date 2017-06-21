@@ -4,7 +4,7 @@
 git init
 ```
 从远程分支克隆一个版本库
-```javascript
+```
 git clone https://github.com/likuner/fragment.git
 ```
 克隆版本库时，远程分支自动被命名为origin，如果想自定义远程分支名
