@@ -12,5 +12,5 @@ son
   /*设置子容器如何沿垂直方向排列,优先级高于父容器的align-items*/
   align-self: flex-start/flex-end/center/stretch/baseline; 
 ```
-以上为flex布局的基础知识,进阶知识...啊...有点复杂...以后补上...静待...
+以上为flex布局的基础知识,进阶知识以后补上...
 
