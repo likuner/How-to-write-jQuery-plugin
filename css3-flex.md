@@ -8,7 +8,7 @@ father
   
 son
   flex: number;  /*子容器的伸缩比例,数字或者是none*/
-  align-self: flex-start/flex-end/center/stretch/baseline;  /*设置子容器如何沿垂直方向排列,优先级高于父容器的align-items*/
+  align-self: flex-start/flex-end/center/stretch/baseline;  /*优先级高于父容器的align-items*/
 ```
 以上为flex布局的基础知识,进阶知识以后补上...
 
