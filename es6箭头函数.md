@@ -8,6 +8,7 @@ var obj = {
         return this.inner;  //outer
     }
 };
+
 //如果想让this指向内部
 var obj = {
     ref : 'inner',
