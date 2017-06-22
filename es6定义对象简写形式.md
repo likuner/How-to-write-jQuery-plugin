@@ -1,6 +1,7 @@
 ```javascript
 //bad
 var name = 'peter';
+
 var obj = {
     name : name,
     age : 26,
