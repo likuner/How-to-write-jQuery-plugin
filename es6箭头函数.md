@@ -1,5 +1,5 @@
 ## 箭头函数需要注意的两个地方
-### 1.this指向window
+### 1.this指向父级作用域
 ```javascript
 var ref = 'outer';
 var obj = {
