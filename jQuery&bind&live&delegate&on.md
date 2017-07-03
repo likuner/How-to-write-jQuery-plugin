@@ -1,6 +1,7 @@
 
 ## bind()
-```javascript
-$("ul li").bind("click", function(){alert("ok")});
 ```
+用bind()绑定事件处理函数，给相应的节点添加，并且新添加的节点无效，存在性能问题
+```
+
 
