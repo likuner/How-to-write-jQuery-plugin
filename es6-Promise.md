@@ -23,10 +23,16 @@ var runAsync = function(){
     });
     return promise;
 }
+console.info(111);
 var prom = runAsync();
 prom.then(function(value){
     console.info(value);
 })
+console.info(222);
+//111
+  222
+  success
+
 ```
 ## 异步执行 async/await
 ```javascript
