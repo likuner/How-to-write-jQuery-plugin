@@ -17,7 +17,9 @@ console.log(4);
 ```javascript
 var runAsync = function(){
     var promise = new Promise(function(resolve,reject){
-        setTimeout(resolve('ok'), 3000);    //模拟异步请求服务器，请求时间为3s
+        setTimeout(function(){
+            resolve('success');
+        }, 3000);    //模拟异步请求服务器，请求时间为3s
     });
     return promise;
 }
@@ -28,21 +30,6 @@ prom.then(function(value){
 ```
 ## 异步执行 async/await
 ```javascript
-var runAsync = function(){
-    var promise = new Promise(function(resolve,reject){
-        setTimeout(resolve('ok'), 3000);    //模拟异步请求服务器，请求时间为3s
-    });
-    return promise;
-}
-var getResult = async function(){
-    try{
-        var result = await runAsync();
-        return result;
-    }catch(err){
-        return err;
-    }
-    
-}
-getResult();
+
 ```
 
