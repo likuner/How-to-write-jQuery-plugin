@@ -1,10 +1,10 @@
 
-    	function timeout(ms) {
+function timeout(ms) {
 	  return new Promise((resolve) => {
 	    setTimeout(() => resolve(ms*2), ms);
 	  });
 	}
-    	
+	
 	async function asyncPrint(ms) {
 	  console.time('aaa');
 	  const sec = await timeout(ms);
@@ -20,7 +20,7 @@
 	  console.info('complete');
 	}
 	asyncPrint(500);
-    	
+	
 	timeout(500).then(function(value){
 		console.log(value);
 		return timeout(value);
