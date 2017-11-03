@@ -1,4 +1,4 @@
-    ```javascript
+
     	function timeout(ms) {
 	  return new Promise((resolve) => {
 	    setTimeout(() => resolve(ms*2), ms);
@@ -32,4 +32,4 @@
 	}).catch(function(error){
 		throw new Error(error);
 	});
-    ```
+
