@@ -5,4 +5,7 @@
 #### <a href="https://likuner.github.io/docs/jquery/build"> jQuery </a>
 #### <a href="##"> ionic </a>
 #### <a href="##"> AngularJS </a>
+#### <a href="##"> Angular2 </a>
+#### <a href="##"> React </a>
+
 
